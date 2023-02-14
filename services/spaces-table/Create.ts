@@ -6,7 +6,7 @@ import { validateSpaceEntry } from '../shared/InputValidator';
 const TABLE_NAME = process.env.TABLE_NAME;
 const dbClient = new DynamoDB.DocumentClient();
 
-// For using typed lambdas
+// For using typed lambdas:
 // npm i @types/aws-lambda
 async function handler(event: APIGatewayProxyEvent, context: Context): Promise<APIGatewayProxyResult> {
     const result: APIGatewayProxyResult = {
